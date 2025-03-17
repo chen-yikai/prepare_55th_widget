@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.widget_prepare"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.widget_prepare"
@@ -58,6 +58,10 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
+    implementation("androidx.glance:glance-appwidget:1.1.1")
+    implementation("androidx.glance:glance-material3:1.1.1")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
     implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
